@@ -100,22 +100,24 @@
     margin-bottom: 22px;
 }
 
+.cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: #ddd;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
 .cover img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+}
 
-        .cover-content {
-            font-size: 32px;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -1px;
-        }
-
-        .issue-info {
-            padding: 0 20px;
-        }
+.issue-info {
+    padding: 0 20px;
+}
 
         .issue-number {
             font-size: 12px;
