@@ -93,16 +93,18 @@
         }
 
         .cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px;
-            margin-bottom: 22px;
-        }
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: #ddd;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 
         .cover-content {
             font-size: 32px;
@@ -223,18 +225,17 @@
 
             <article class="issue">
 
-                <div class="cover">
-                    <div class="cover-content">
-                        EL<br>
-                        INDIRIGIBLE<br><br>
-                        Nº 01
-                    </div>
-                </div>
+               <div class="cover">
+    <img
+        src="portada-01.jpg"
+        alt="Portada del número 1 de El Indirigible"
+    >
+</div>
 
                 <div class="issue-info">
 
                     <div class="issue-number">
-                        Número 01 · Septiembre 2026
+                        Número 01 · Octubre 2026
                     </div>
 
                     <h3>
